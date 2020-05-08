@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+ <title>AtoZ Meds</title>
+<link rel="shortcut icon" type ="image/png" href="a2z.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+.header {
+  padding : 20px;
+text-align: center;
+  background: #6dc2c5;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 70px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+      .nav{
+        background: black;
+        height: 2px;
+      }
+
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Footer */
+.footer {
+  padding: 10px;
+  background: #333;
+        color: pink;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>AtoZ Meds</h1>
+  <p>powered by Bots, Inc.</p>
+</div>
+
+<div class="navbar">
+  <a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a>
+  <a href="https://forms.gle/9icpH1a3Yui1F6Fk8"><i class="fa fa-fw fa-upload"></i>Upload Prescription</a>
+  <a href="cart.html"><i class="fa fa-fw fa-shopping-cart"></i>Cart</a>
+  <a href="feedback.html" class="right"><i class="fa fa-fw fa-comment"></i>Feedback</a>
+</div>
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>For any reviews or complaints, leave us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="feedback1.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="thankq.html">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">City</label>
+        <select id="country" name="country">
+          <option value="Gurugram">Gurugram</option>
+          <option value="New Delhi">New Delhi</option>
+          <option value="Kolkata">Kolkata</option>
+          <option value="Hyderabad">Hyderabad</option>
+          <option value="Mumbai">Mumbai</option>
+          <option value="Pune">Pune</option>
+          <option value="Bengaluru">Bengaluru</option>
+          <option value="Lucknow">Lucknow</option>
+          <option value="Jaipur">Jaipur</option>
+          <option value="Ahmedabad">Ahmedabad</option>
+          <option value="Bhopal">Bhopal</option>
+          <option value="Ranchi">Ranchi</option>
+          <option value="Chandigarh">Chandigarh</option>
+          <option value="Bhubaneshwar">Bhubaneshwar</option>
+          <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+     <div class="footer">
+      <pre><h4>
+         AtoZ Meds™                                                                       
+         India's first personalised online Medicine Shop
+         <i class="fa fa-fw fa-map-marker"></i> SRMIST, Kattankulathur, Chennai, 603203
+         <i class="fa fa-fw fa-phone"></i> +91-987654321                                                                                                                                          Copyright© 2020 Bots Inc.
+         <i class="fa fa-fw fa-envelope"></i> info@atozmeds.com                                                                                                                                          <i class="fa fa-fw fa-facebook"></i>   <i class="fa fa-fw fa-twitter"></i>   <i class="fa fa-fw fa-whatsapp"></i>   <i class="fa fa-fw fa-google"></i>
+      </h4></pre>
+     </div>
+
+</body>
+</html>

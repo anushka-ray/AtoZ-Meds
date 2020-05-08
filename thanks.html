@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>AtoZ Meds</title>
+<link rel="shortcut icon" type ="image/png" href="a2z.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+       {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding : 20px;
+text-align: center;
+  background: #6dc2c5;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 70px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+      .nav{
+        background: black;
+        height: 2px;
+      }
+      .divi{
+        position: absolute;
+        margin-top: 5%;
+        margin-left: 10%;
+        height: 40%;
+        width: 30%;
+        /*border: 2px solid black*/
+      }
+
+      .msg{
+        position: absolute;
+        margin-top: 8%;
+        margin-left: 55%;
+        height: 40%;
+        width: 30%;
+        color: pink;
+        /*border: 2px solid black*/
+      }
+      .redirect{
+        margin-top: 18%
+      }
+    .footer{
+        position: absolute;
+        margin-top: 33.5%;
+        width:100%;
+        background: #333;
+        color: pink;
+        /*border: 2px solid black*/
+      }
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+    </style>
+
+  </head>
+  <body>
+
+
+    <div class="header">
+  <h1>AtoZ Meds</h1>
+  <p>powered by Bots, Inc.</p>
+</div>
+
+<div class="navbar">
+  <a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a>
+  <a href="https://forms.gle/9icpH1a3Yui1F6Fk8"><i class="fa fa-fw fa-upload"></i>Upload Prescription</a>
+  <a href="cart.html"><i class="fa fa-fw fa-shopping-cart"></i>Cart</a>
+  <a href="feedback.html" class="right"><i class="fa fa-fw fa-comment"></i>Feedback</a>
+</div>
+    <div class="divi">
+
+      <img src="thankyou.jpg">
+
+    </div>
+    <div class="thank msg">
+    <h1>Thank you for your order.</h1>
+    <h4>Your order has been placed and is being processed. You will receive an email with the order details shortly.</h4>
+
+    </div>
+    <div class="redirect msg">
+      <h4><a href="home.html">Click here</a> to continue shopping with us.</h4>
+    </div>
+ <div class="footer">
+      <pre><h4>
+         AtoZ Meds™                                                                       
+         India's first personalised online Medicine Shop
+         <i class="fa fa-fw fa-map-marker"></i> SRMIST, Kattankulathur, Chennai, 603203
+         <i class="fa fa-fw fa-phone"></i> +91-987654321                                                                                                                                          Copyright© 2020 Bots Inc.
+         <i class="fa fa-fw fa-envelope"></i> info@atozmeds.com                                                                                                                                          <i class="fa fa-fw fa-facebook"></i>   <i class="fa fa-fw fa-twitter"></i>   <i class="fa fa-fw fa-whatsapp"></i>   <i class="fa fa-fw fa-google"></i>
+        </h4>
+      </pre>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+ 	<title>AtoZ Meds</title>
+
+	<link rel="shortcut icon" type ="image/png" href="a2z.png">
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   	
+	<style>
+   	{
+  		box-sizing: border-box;
+	}
+
+	body 
+	{
+  		font-family: Arial, Helvetica, sans-serif;
+  		margin: 0;
+	}
+
+	.header 
+	{
+  		padding : 10px;
+  		text-align: center;
+  		background: #6dc2c5;
+  		color: white;
+	}
+
+	.header h1 	
+	{
+  		font-size: 70px;
+	}			
+
+	.navbar 
+	{
+  		overflow: hidden;
+  		background-color: #333;
+	}
+
+	.navbar a 
+	{
+  		float: left;
+  		display: block;
+  		color: white;
+  		text-align: center;
+  		padding: 14px 20px;
+  		text-decoration: none;
+	}
+
+	.navbar a.right 
+	{
+  		float: right;
+	}
+
+	.navbar a:hover 
+	{
+  		background-color: #ddd;
+  		color: black;
+	}
+
+      	.nav
+	{
+        	background: black;
+        	height: 2px;
+      	}
+
+      	.divi
+	{
+        	position: absolute;
+        	margin-top: 5%;
+        	margin-left: 10%;
+        	height: 40%;
+        	width: 30%;
+      	}
+
+      	.box
+	{
+        	position: absolute;
+        	margin-top: 10%;
+        	margin-left: 45%;
+        	padding: 25px 42px;
+        	text-decoration: none;
+        	display: inline-block;
+        	border: none;
+      	}
+
+      	.confirm
+	{
+        	margin-top: 20%
+      	}
+
+
+      	.container
+	{
+        	margin-top:5%;
+        	margin-left:65%;
+        	display:flex;
+       		height:60%;
+        	padding: 50px 0px;
+        	flex-direction:column;
+        	align-items:center;
+        	justify-content:center;
+        	font-family:'Roboto Condensed', sans-serif;
+      	}
+
+
+      	.btn
+	{
+  		border: none;
+  		background-color: #6bc2c5;
+  		border-radius: .25rem;
+  		margin-top:20px;
+  		padding: 20px;
+  		font-size: 16px;
+  		cursor: pointer;
+  		display: inline-block;
+  		outline:none
+	}
+	.success 
+	{
+  		color: white;
+	}
+
+	.success:hover 
+	{
+  		background-color: #22c3bb;
+  		color: white;
+	}
+      	.reply
+	{
+        	display:flex;
+        	align-items:center;
+        	justify-content:center;
+        	width:50%;
+        	height:100px;
+        	background: azure;
+        	margin:1rem;
+        	border-radius:20px;
+      	}
+
+      	.question
+	{
+        	display:flex;
+        	align-items:center;
+        	justify-content:center;
+        	width:50%;
+      	}
+	.footer 
+	{
+  		padding: 10px;
+  		background: #333;
+        	color: pink;
+	}	  
+
+
+	@media screen and (max-width: 700px) 
+	{
+  		.row 
+		{   
+    			flex-direction: column;
+  		}
+	}
+
+	@media screen and (max-width: 400px) 
+	{
+  		.navbar a 
+		{
+    			float: none;
+    			width: 100%;
+  		}
+	}
+
+    </style>
+  </head>
+
+ <body>
+   <div class="header">
+  	<h1>AtoZ Meds</h1>
+  	<p>powered by Bots, Inc.</p>
+   </div>
+
+   <div class="navbar">
+  	<a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a>
+  	<a href="https://forms.gle/9icpH1a3Yui1F6Fk8"><i class="fa fa-fw fa-upload"></i>Upload Prescription</a>
+  	<a href="cart.html"><i class="fa fa-fw fa-shopping-cart"></i>Cart</a>
+  	<a href="feedback.html" class="right"><i class="fa fa-fw fa-comment"></i>Feedback</a>
+   </div>
+    
+    <div class="divi">
+      <img src="image.jpg">
+    </div>
+     
+    <div class="upload box">
+      <a href="locate.html"><button class="btn success"><h1><i class="fa fa-fw fa-map-marker"></i>Our Stores</h1></button></a>
+    </div>
+
+    <div class="container">
+      <h1>Ask us a question!</h1>
+      <label for="bg-color">Background colour</label>
+      <input type="color" id="bg-colour">
+      <label for="text-colour">Text colour</label>
+          <input type="color" id="text-colour">
+      <div class="reply">How can we help?</div>
+      <input class="question" type="text" name="question input" placeholder="Ask a question or search with keywords">
+    </div>
+
+     <div class="footer">
+      <pre><h4>
+         AtoZ Meds™                                                                       
+         India's first personalised online Medicine Shop
+         <i class="fa fa-fw fa-map-marker"></i> SRMIST, Kattankulathur, Chennai, 603203
+         <i class="fa fa-fw fa-phone"></i> +91-987654321                                                                                                                                          Copyright© 2020 Bots Inc.
+         <i class="fa fa-fw fa-envelope"></i> info@atozmeds.com                                                                                                                                          <i class="fa fa-fw fa-facebook"></i>   <i class="fa fa-fw fa-twitter"></i>   <i class="fa fa-fw fa-whatsapp"></i>   <i class="fa fa-fw fa-google"></i>
+        </h4></pre>
+    </div>
+      
+   <script>
+        let answers = [
+          'Upload the prescription by clicking the upload button and await for our call.',
+          'After attending the call please confirm the order by clicking on confirm button.',
+          'After confirmation make the payment by either COD or UPI.',
+          'Our phone number is +91-987654321. You can call from 8am to 6pm.',
+          'For order status contact our customer care or Email us at info@atozmeds.com',
+          'For order status contact our customer care or Email us at info@atozmeds.com',
+          'The Doctors number will available on the confirmation page'
+        ]
+        //variables
+        const replyBox = document.querySelector('.reply');
+        const questionSubmit = document.querySelector('.question');
+        const noAnswer = "I'm sorry, I don't understand your question";
+        const bgColour = document.getElementById('bg-colour');
+        const textColour = document.getElementById('text-colour');
+
+
+        function showResponse(){
+        if(questionSubmit.value.includes('medicine') || questionSubmit.value.includes('pills')|| questionSubmit.value.includes('medicines')|| questionSubmit.value.includes('drugs')){
+          replyBox.textContent = answers[0];
+        } else if(questionSubmit.value.includes('confrim') || questionSubmit.value.includes('confirmation')){
+          replyBox.textContent = answers[1];
+        } else if(questionSubmit.value.includes('payment') || questionSubmit.value.includes('money') || questionSubmit.value.includes('price')|| questionSubmit.value.includes('cost')|| questionSubmit.value.includes('how much')){
+          replyBox.textContent = answers[2];
+        } else if(questionSubmit.value.includes('phone') || questionSubmit.value.includes('contact')|| questionSubmit.value.includes('customer care')|| questionSubmit.value.includes('call')){
+          replyBox.textContent = answers[3];
+        } else if(questionSubmit.value.includes('prescription')|| questionSubmit.value.includes('accepted')|| questionSubmit.value.includes('order')|| questionSubmit.value.includes('status')){
+          replyBox.textContent = answers[4];
+        } else if(questionSubmit.value.includes('time') || questionSubmit.value.includes('date') || questionSubmit.value.includes('long')|| questionSubmit.value.includes('delivery')){
+          replyBox.textContent = answers[5];
+        } else if(questionSubmit.value.includes('doctor') || questionSubmit.value.includes('available')){
+          replyBox.textContent = answers[6];
+        } else{
+          replyBox.textContent = noAnswer;
+        }
+          questionSubmit.value = '';
+        }
+
+        questionSubmit.addEventListener('keypress', (e) => {
+          if(e.keyCode == 13){
+            showResponse();
+          } else{
+            return
+          }
+        })
+
+        function changeBg(){
+          replyBox.style.backgroundColor = bgColour.value;
+        }
+
+        function changeText(){
+          replyBox.style.color = textColour.value;
+        }
+
+        bgColour.addEventListener('change', changeBg);
+        textColour.addEventListener('change', changeText);
+
+
+    </script>
+
+
+
+</body>
+</html>
